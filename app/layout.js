@@ -1,5 +1,6 @@
 import './globals.css'
 import CustomNavbar from 'components/CustomNavbar'
+import CustomFooter from 'components/CustomFooter'
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <CustomNavbar />
-        {children}
+        <div style={{maxWidth: '650px', margin: 'auto'}}>
+          <CustomNavbar />
+          {children}
+        </div>
+        <CustomFooter />
       </body>
     </html>
   )
