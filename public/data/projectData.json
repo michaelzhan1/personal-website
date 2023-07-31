@@ -1,0 +1,32 @@
+[
+    {
+        "name": "To-do List",
+        "url": "https://todo-list-production-626a.up.railway.app/",
+        "imageUrl": "/img/todo.png",
+        "description": "todolist placeholder"
+    },
+    {
+        "name": "FairShare",
+        "url": "https://fairshare-production.up.railway.app/",
+        "imageUrl": "/img/fairshare.png",
+        "description": "fairshare placeholder"
+    },
+    {
+        "name": "michaelzhan.me",
+        "url": "https://michaelzhan.me/",
+        "imageUrl": "/img/website.png",
+        "description": "website placeholder"
+    },
+    {
+        "name": "Quote Generator",
+        "url": "https://quote-generator-production-d8e3.up.railway.app/",
+        "imageUrl": "/img/quote.png",
+        "description": "quote placeholder"
+    },
+    {
+        "name": "Pickleball Reservation System",
+        "url": "https://pickleball-reserve-production.up.railway.app/",
+        "imageUrl": "/img/pickleball.png",
+        "description": "pickleball placeholder"
+    }
+]
