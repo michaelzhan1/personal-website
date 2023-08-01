@@ -24,9 +24,9 @@
         "description": "A random quote generator. Built with Next.js and React-Bootstrap. Uses external RESTful APIs."
     },
     {
-        "name": "Pickleball Reservation",
+        "name": "Court Reservation System",
         "url": "https://pickleball-reserve-production.up.railway.app/",
         "imageUrl": "/img/pickleball.png",
-        "description": "A utility built for personal use to reserve pickleball courts. Built with Next.js and React-Bootstrap. Uses internal RESTful APIs and headless browsers."
+        "description": "A utility built for personal use to reserve tennis courts. Built with Next.js and React-Bootstrap. Uses internal APIs and headless browsers through puppeteer."
     }
 ]
