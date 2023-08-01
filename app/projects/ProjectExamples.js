@@ -28,11 +28,11 @@ export default function ProjectExamples () {
                     <Image src={project.imageUrl} thumbnail />
                   </a>
                 </Col>
-                <Col xs={12} sm={8} className='d-flex flex-column justify-content-center'>
+                <Col xs={12} sm={8} className={`${styles['project-name-margin']} d-flex flex-column justify-content-center`}>
                   <a href={project.url} target='_blank' rel='noreferrer' className={styles['project-link']}>
-                    <h2><strong>{project.name}</strong></h2>
+                    <h2 className={styles['project-name']}><strong>{project.name}</strong></h2>
                   </a>
-                  <p>{project.description}</p>
+                  <p className={styles['project-description']}>{project.description}</p>
                 </Col>
               </Row>
               { projectData.length - 1 !== index && <hr />}

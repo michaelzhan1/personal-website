@@ -13,7 +13,7 @@ export default function Home() {
         <Row className='mb-4'>
           <Col xs={12} md={7} className='d-flex flex-column justify-content-center'>
             <h1><strong>Michael Zhan</strong></h1>
-            <h2>Harvard Computational Science and Engineering MSc Student</h2>
+            <h2 style={{fontSize: '28px'}}>Harvard Computational Science and Engineering MSc Student</h2>
           </Col>
           <Col xs={12} md={5} className='d-flex flex-column justify-content-center'>
             <Image src='/img/headshot.jpg' roundedCircle fluid />
