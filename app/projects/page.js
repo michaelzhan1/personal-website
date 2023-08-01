@@ -11,7 +11,7 @@ export default function Projects () {
     <>
       <Container>
         <Row>
-          <Col className='p-0 mb-3'>
+          <Col className='mb-3'>
             <h1><strong>Projects</strong></h1>
           </Col>
         </Row>

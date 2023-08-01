@@ -19,9 +19,9 @@ export default function CustomFooter () {
         </Row>
         <Row className='mb-0'>
           <Col className='text-center'>
-            <a href='mailto:michaelzhan2001@gmail.com' style={{color: '#1ca098'}} className='mx-2'><FontAwesomeIcon icon={faEnvelope} /></a>
-            <a href='linkedin.com/in/michaelzhan1' style={{color: '#1ca098'}} className='mx-2'><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href='github.com/michaelzhan2' style={{color: '#1ca098'}} className='mx-2'><FontAwesomeIcon icon={faGithub} /></a>
+            <a href='mailto:michaelzhan2001@gmail.com' style={{color: '#efede7'}} className='mx-2'><FontAwesomeIcon icon={faEnvelope} /></a>
+            <a href='linkedin.com/in/michaelzhan1' style={{color: '#efede7'}} className='mx-2'><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href='github.com/michaelzhan2' style={{color: '#efede7'}} className='mx-2'><FontAwesomeIcon icon={faGithub} /></a>
           </Col>
         </Row>
         <Row>

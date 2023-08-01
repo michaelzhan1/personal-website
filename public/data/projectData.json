@@ -3,30 +3,30 @@
         "name": "To-do List",
         "url": "https://todo-list-production-626a.up.railway.app/",
         "imageUrl": "/img/todo.png",
-        "description": "todolist placeholder"
+        "description": "A simple to-do list using LocalStorage. Built with base HTML and JavaScript, and styled with Bootstrap."
     },
     {
         "name": "FairShare",
         "url": "https://fairshare-production.up.railway.app/",
         "imageUrl": "/img/fairshare.png",
-        "description": "fairshare placeholder"
+        "description": "A web app that allows users to split bills and keep track of expenses. Built with base JavaScript on a Flask and PostgreSQL backend, and styled with Bootstrap."
     },
     {
         "name": "michaelzhan.me",
         "url": "https://michaelzhan.me/",
         "imageUrl": "/img/website.png",
-        "description": "website placeholder"
+        "description": "My personal website (the one you're on right now!). Built with Next.js and React-Bootstrap."
     },
     {
         "name": "Quote Generator",
         "url": "https://quote-generator-production-d8e3.up.railway.app/",
         "imageUrl": "/img/quote.png",
-        "description": "quote placeholder"
+        "description": "A random quote generator. Built with Next.js and React-Bootstrap. Uses external RESTful APIs."
     },
     {
-        "name": "Pickleball Reservation System",
+        "name": "Pickleball Reservation",
         "url": "https://pickleball-reserve-production.up.railway.app/",
         "imageUrl": "/img/pickleball.png",
-        "description": "pickleball placeholder"
+        "description": "A utility built for personal use to reserve pickleball courts. Built with Next.js and React-Bootstrap. Uses internal RESTful APIs and headless browsers."
     }
 ]

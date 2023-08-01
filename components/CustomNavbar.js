@@ -7,9 +7,8 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 export default function CustomNavbar () {
   return (
     <>
-      <Navbar expand='sm' sticky='top' style={{backgroundColor: '#f5f5f5', color: '#666666'}} className='my-4'>
-        <Container fluid className='p-0' style={{maxWidth: '650px'}}>
-          <Navbar.Brand href='/' className='p-0'>Next.js</Navbar.Brand>
+      <Navbar expand='sm' sticky='top' style={{backgroundColor: '#f5f5f5', color: '#666666', fontSize: '16px'}} className='my-4'>
+        <Container fluid style={{maxWidth: '650px'}}>
           <Navbar.Toggle />
           <Navbar.Collapse className='justify-content-end'>
             <Nav className='mr-auto'>

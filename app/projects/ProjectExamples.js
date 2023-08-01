@@ -22,12 +22,12 @@ export default function ProjectExamples () {
           return (
             <>
               <Row>
-                <Col xs={12} sm={4} className='p-0'>
+                <Col xs={12} sm={4} className='d-flex flex-column justify-content-center'>
                   <a href={project.url} target='_blank' rel='noreferrer'>
                     <Image src={project.imageUrl} thumbnail />
                   </a>
                 </Col>
-                <Col xs={12} sm={8}>
+                <Col xs={12} sm={8} className='d-flex flex-column justify-content-center'>
                   <a href={project.url} target='_blank' rel='noreferrer'>
                     <h2><strong>{project.name}</strong></h2>
                   </a>

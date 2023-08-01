@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={openSans.className} id='main-body'>
+      <body className={openSans.className} style={{backgroundColor: '#f5f5f5', fontSize: '18px'}}>
         <div style={{maxWidth: '650px', margin: 'auto'}}>
           <CustomNavbar />
           {children}
