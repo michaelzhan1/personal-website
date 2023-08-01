@@ -2,6 +2,7 @@
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styles from './page.module.css'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
 
@@ -28,7 +29,7 @@ export default function ProjectExamples () {
                   </a>
                 </Col>
                 <Col xs={12} sm={8} className='d-flex flex-column justify-content-center'>
-                  <a href={project.url} target='_blank' rel='noreferrer'>
+                  <a href={project.url} target='_blank' rel='noreferrer' className={styles['project-link']}>
                     <h2><strong>{project.name}</strong></h2>
                   </a>
                   <p>{project.description}</p>
