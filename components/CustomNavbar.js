@@ -1,10 +1,7 @@
 'use client'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function CustomNavbar () {
