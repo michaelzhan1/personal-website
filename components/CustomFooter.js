@@ -12,7 +12,7 @@ export default function CustomFooter () {
   return (
     <>
       <Container fluid style={{backgroundColor: '#363636', color: '#efede7'}} className='fixed-bottom'>
-        <Row className='mt-1'>
+        <Row className='mt-1' style={{fontSize: '16px'}}>
           <Col className='text-center'>
             <p className='mb-0'>Contact me:</p>
           </Col>
@@ -25,9 +25,8 @@ export default function CustomFooter () {
           </Col>
         </Row>
         <Row>
-          <Col className='text-center'>
-            <p className='mb-0'>© 2023 Michael Zhan</p>
-            <p>Built with Next.js, deployed on Railway</p>
+          <Col className='text-center' style={{fontSize: '14px'}}>
+            <p className='mb-1'>© 2023 Michael Zhan. Built with Next.js, deployed on Railway</p>
           </Col>
         </Row>
       </Container>

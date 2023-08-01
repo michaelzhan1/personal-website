@@ -18,7 +18,7 @@ export default function ProjectExamples () {
 
   return (
     <>
-      <Container style={{'paddingBottom': '150px'}}> {/* change this as needed, with footer */}
+      <Container className='mb-3' style={{'paddingBottom': '80px'}}>
         { projectData.map((project, index) => {
           return (
             <>

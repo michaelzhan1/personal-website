@@ -9,7 +9,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 export default function About () {
   return (
     <>
-      <Container style={{paddingBottom: '150px'}}>
+      <Container style={{paddingBottom: '80px'}}>
         <Row>
           <Col className='mb-3'>
             <h1><strong>About Me</strong></h1>
