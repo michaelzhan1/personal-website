@@ -18,7 +18,7 @@ export default function ProjectExamples () {
 
   return (
     <>
-      <Container className='mb-3' style={{'paddingBottom': '80px'}}>
+      <Container className='mb-3'>
         { projectData.map((project, index) => {
           return (
             <>

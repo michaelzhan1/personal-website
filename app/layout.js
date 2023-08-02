@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className} style={{backgroundColor: '#f5f5f5', fontSize: '18px'}}>
-        <div style={{maxWidth: '650px', margin: 'auto'}}>
-          <CustomNavbar />
-          {children}
+        <div className='main-body'>
+          <div style={{maxWidth: '650px', margin: 'auto'}}>
+            <CustomNavbar />
+            {children}
+          </div>
         </div>
         <CustomFooter />
       </body>
