@@ -6,6 +6,12 @@
         "description": "My personal website (the one you're on right now!). Built with Next.js and React-Bootstrap."
     },
     {
+        "name": "bioRxiv Newsletter",
+        "url": "https://biorxiv-search-production.up.railway.app/",
+        "imageUrl": "/img/biorxiv.jpg",
+        "description": "A weekly newsletter that sends you the latest bioRxiv preprints based on your search of choice."
+    },
+    {
         "name": "Book Recommender",
         "url": "https://book-recommend-production.up.railway.app/",
         "imageUrl": "/img/book.png",
