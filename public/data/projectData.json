@@ -7,37 +7,37 @@
     },
     {
         "name": "bioRxiv Newsletter",
-        "url": "https://biorxiv-search-production.up.railway.app/",
+        "url": "https://biorxiv.michaelzhan.me/",
         "imageUrl": "/img/biorxiv.jpg",
         "description": "A weekly newsletter that sends you the latest bioRxiv preprints based on your search of choice."
     },
     {
         "name": "Book Recommender",
-        "url": "https://book-recommend-production.up.railway.app/",
+        "url": "https://bookshelf.michaelzhan.me/",
         "imageUrl": "/img/book.png",
         "description": "A book recommender built with Next.js, NextAuth, and Tailwind CSS. Uses Google Books API."
     },
     {
         "name": "Quote Generator",
-        "url": "https://quote-generator-production-d8e3.up.railway.app/",
+        "url": "https://quote.michaelzhan.me/",
         "imageUrl": "/img/quote.png",
         "description": "A random quote generator. Built with Next.js and React-Bootstrap. Uses external RESTful APIs."
     },
     {
         "name": "FairShare",
-        "url": "https://fairshare-production.up.railway.app/",
+        "url": "https://fairshare.michaelzhan.me/",
         "imageUrl": "/img/fairshare.png",
         "description": "A web app that allows users to split bills and keep track of expenses. Built with base JavaScript on a Flask and PostgreSQL backend, and styled with Bootstrap."
     },
     {
         "name": "To-do List",
-        "url": "https://todo-list-production-626a.up.railway.app/",
+        "url": "https://todo.michaelzhan.me",
         "imageUrl": "/img/todo.png",
         "description": "A simple to-do list using LocalStorage. Built with base HTML and JavaScript, and styled with Bootstrap."
     },
     {
         "name": "Court Reservation System",
-        "url": "https://pickleball-reserve-production.up.railway.app/",
+        "url": "https://reserve.michaelzhan.me/",
         "imageUrl": "/img/pickleball.png",
         "description": "A utility built for personal use to reserve tennis courts. Built with Next.js and React-Bootstrap. Uses internal APIs and headless browsers through puppeteer."
     }
