@@ -6,9 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        '28': '28px',
-        '34': '34px',
+      colors: {
+        'custom-gray': '#363636',
+        'custom-light': '#efede7',
+        'navbar-text': '#666666',
+        'main-bg': '#f5f5f5',
       }
     },
   },
