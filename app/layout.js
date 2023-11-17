@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className={openSans.className} style={{backgroundColor: '#f5f5f5', fontSize: '18px'}}>
+      <body className={`${openSans.className} bg-main-bg text-lg`}>
         <div className='main-body'>
-          <div style={{maxWidth: '650px', margin: 'auto'}}>
-            <CustomNavbar />
+          <div className='max-w-[650px] px-3 m-auto pb-20'>
+            {/* <CustomNavbar /> */}
             {children}
           </div>
         </div>
