@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .main-body {
   overflow-y: scroll;
   width: 100%;
