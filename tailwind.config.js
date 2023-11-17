@@ -5,7 +5,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '28': '28px',
+        '34': '34px',
+      }
+    },
   },
   plugins: [],
 }
