@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <>
-      <div className="pb-3 flex items-center justify-between">
+      <div className="pb-3 flex xs:flex-col md:flex-row flex-wrap items-center justify-between">
         <div className="mb-4 flex flex-col xs:w-full md:w-7/12">
-          <h1 className="text-[34px] font-bold mb-3">Michael Zhan</h1>
+          <h1 className="text-[calc(1.375rem+1.5vw)] font-bold mb-3">Michael Zhan</h1>
           <h2 className="text-[28px] leading-tight">Harvard Computational Science and Engineering MSc Student</h2>
         </div>
-        <div className="flex flex-col justify-center xs:w-full md:w-[40%] max-w-md">
+        <div className="flex flex-col justify-center w-[40%] items-center">
           <img src="/img/headshot.jpg" className="rounded-full" />
         </div>
       </div>

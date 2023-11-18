@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${openSans.className} bg-main-bg text-lg`}>
         <div className='main-body'>
           <div className='max-w-[650px] px-3 m-auto pb-20'>
-            {/* <CustomNavbar /> */}
+            <CustomNavbar />
             {children}
           </div>
         </div>
