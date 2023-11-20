@@ -18,7 +18,7 @@ export default function ProjectExamples () {
         { projectData.map((project, index) => {
           return (
             <>
-              <div className='flex flex-col w-full md:w-1/2'>
+              <div className='flex flex-col w-full md:w-1/2 p-2'>
                 <div className='mb-3'>
                   <img src={project.imageUrl} alt={project.name} className='w-full' />
                 </div>
@@ -31,7 +31,7 @@ export default function ProjectExamples () {
                   <p>{project.description}</p>
                 </div>
               </div>
-              {index % 2 === 1 && index !== projectData.length - 1 && <hr className='w-full mb-3 border-0 bg-navbar-text h-px' />}
+              {index % 2 === 1 && index !== projectData.length - 1 && <hr className='w-full mb-3 border-0 bg-gray-300 h-px' />}
             </>
           )
         })}
