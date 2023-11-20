@@ -1,7 +1,7 @@
 export default function CustomNavbar () {
   return (
     <>
-      <div className="sticky top-0 text-navbar-text text-base my-4 py-2">
+      <div className="sticky top-0 text-navbar-text text-base my-4 py-2 bg-main-bg">
         <div className="flex justify-end mr-auto">
           <a href="/" className="p-2">Home</a>
           <a href="/about" className="p-2">About</a>
