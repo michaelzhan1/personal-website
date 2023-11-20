@@ -1,11 +1,7 @@
 'use client'
 
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import styles from './page.module.css'
-import { Container, Row, Col, Image } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
-
 
 
 export default function ProjectExamples () {
@@ -18,7 +14,28 @@ export default function ProjectExamples () {
 
   return (
     <>
-      <Container className='mb-3'>
+      <div className='flex flex-wrap'>
+        { projectData.map((project, index) => {
+          return (
+            <>
+              <div className='flex flex-col w-full md:w-1/2'>
+                <div className='mb-3'>
+                  <img src={project.imageUrl} alt={project.name} className='w-full' />
+                </div>
+                <div>
+                  <a href={project.url} target='_blank' rel='noreferrer' className='mb-3'>
+                    <h2 className='text-[1.5rem] font-bold'>{project.name}</h2>
+                  </a>
+                </div>
+                <div className='mb-3'>
+                  <p>{project.description}</p>
+                </div>
+              </div>
+            </>
+          )
+        })}
+      </div>
+      {/* <Container className='mb-3'>
         { projectData.map((project, index) => {
           return (
             <>
@@ -39,7 +56,8 @@ export default function ProjectExamples () {
             </>
           )
         })}
-      </Container>
+      </Container> */}
     </>
+      
   )
 }
