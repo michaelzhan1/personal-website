@@ -31,6 +31,7 @@ export default function ProjectExamples () {
                   <p>{project.description}</p>
                 </div>
               </div>
+              {index % 2 === 1 && index !== projectData.length - 1 && <hr className='w-full mb-3 border-0 bg-navbar-text h-px' />}
             </>
           )
         })}
