@@ -40,5 +40,11 @@
         "url": "https://reserve.michaelzhan.me/",
         "imageUrl": "/img/pickleball.png",
         "description": "A utility built for personal use to reserve tennis courts. Built with Next.js and React-Bootstrap. Uses internal APIs and headless browsers through puppeteer."
+    },
+    {
+        "name": "Weather App",
+        "url": "https://weather.michaelzhan.me",
+        "imageUrl": "/img/weather.png",
+        "description": "A straightforward current weather display"
     }
 ]
