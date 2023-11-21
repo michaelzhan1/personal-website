@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="mb-4 flex xs:flex-col md:flex-row flex-wrap items-center justify-between">
+      <div className="mb-4 flex xs:flex-col md:flex-row flex-wrap items-center justify-between bg-main-bg">
         <div className="flex flex-col xs:w-full md:w-7/12 mt-3">
           <h1 className="text-[40px] font-bold mb-4">Michael Zhan</h1>
           <h2 className="text-[28px] leading-tight">Harvard Computational Science and Engineering MSc Student</h2>

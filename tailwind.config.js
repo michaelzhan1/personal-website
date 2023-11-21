@@ -11,6 +11,9 @@ module.exports = {
         'custom-light': '#efede7',
         'navbar-text': '#666666',
         'main-bg': '#f5f5f5',
+      },
+      transitionProperty: {
+        'height': 'height',
       }
     },
   },
