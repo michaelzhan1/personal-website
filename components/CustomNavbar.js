@@ -11,7 +11,7 @@ export default function CustomNavbar () {
   return (
     <>
       {/* Mobile navbar */}
-      <div className="mt-7 sticky top-0">
+      <div className="pt-5 sticky top-0 block md:hidden bg-main-bg">
         <svg
           className="w-8 h-8 text-gray-500 ms-3 mb-3"
           fill="none"
