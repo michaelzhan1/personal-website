@@ -3,42 +3,42 @@
         "name": "michaelzhan.me",
         "url": "https://michaelzhan.me/",
         "imageUrl": "/img/website.png",
-        "description": "My personal website (the one you're on right now!). Built with Next.js and React-Bootstrap."
+        "description": "My personal website (the one you're on right now!). Built with Next.js and TailwindCSS."
+    },
+    {
+        "name": "Conway's Game of Life",
+        "url": "https://github.com/michaelzhan1/game-of-life",
+        "imageUrl": "/img/gameoflife.png",
+        "description": "An implementation of Conway's Game of Life in C++. Uses gtkmm-3.0 for graphics."
     },
     {
         "name": "bioRxiv Newsletter",
         "url": "https://biorxiv.michaelzhan.me/",
-        "imageUrl": "/img/biorxiv.jpg",
-        "description": "A weekly newsletter that sends you the latest bioRxiv preprints based on your search of choice."
+        "imageUrl": "/img/biorxiv.png",
+        "description": "A weekly newsletter service that retrieves and sends users latest bioRxiv preprints based on their search. Built with Next.js and TailwindCSS, using the bioRxiv API."
     },
     {
         "name": "Book Recommender",
         "url": "https://bookshelf.michaelzhan.me/",
-        "imageUrl": "/img/book.png",
-        "description": "A book recommender built with Next.js, NextAuth, and Tailwind CSS. Uses Google Books API."
+        "imageUrl": "/img/bookshelf.png",
+        "description": "A bookshelf and recommender service with user authentication, using Google Books API. Built with Next.js, NextAuth, and Tailwind CSS."
     },
     {
-        "name": "Quote Generator",
-        "url": "https://quote.michaelzhan.me/",
-        "imageUrl": "/img/quote.png",
-        "description": "A random quote generator. Built with Next.js and React-Bootstrap. Uses external RESTful APIs."
+        "name": "Tic-Tac-Toe",
+        "url": "https://tictactoe.michaelzhan.me/",
+        "imageUrl": "/img/tictactoe.png",
+        "description": "A simple multiplayer tic-tac-toe game. Built with Next.js and TailwindCSS, using Socket.IO and an Express.js backend for real-time communication."
     },
     {
         "name": "FairShare",
         "url": "https://fairshare.michaelzhan.me/",
         "imageUrl": "/img/fairshare.png",
-        "description": "A web app that allows users to split bills and keep track of expenses. Built with base JavaScript on a Flask and PostgreSQL backend, and styled with Bootstrap."
+        "description": "A web app that tracks expenses for groups and calculates how to split bills. Built with base JavaScript and HTML/CSS on a Flask backend."
     },
     {
-        "name": "To-do List",
-        "url": "https://todo.michaelzhan.me",
-        "imageUrl": "/img/todo.png",
-        "description": "A simple to-do list using LocalStorage. Built with base HTML and JavaScript, and styled with Bootstrap."
-    },
-    {
-        "name": "Court Reservation System",
-        "url": "https://reserve.michaelzhan.me/",
-        "imageUrl": "/img/pickleball.png",
-        "description": "A utility built for personal use to reserve tennis courts. Built with Next.js and React-Bootstrap. Uses internal APIs and headless browsers through puppeteer."
+        "name": "Weather App",
+        "url": "https://weather.michaelzhan.me",
+        "imageUrl": "/img/weather.png",
+        "description": "A weather app that displays the current weather for a user-chosen location. Built with Next.js and TailwindCSS, using the OpenWeatherMap API."
     }
 ]
