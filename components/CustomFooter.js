@@ -13,10 +13,10 @@ export default function CustomFooter () {
         <p className='mt-1 text-base'>Contact me:</p>
         <div className='flex flex-row justify-center items-center'>
           <a href='mailto:michaelzhan2001@gmail.com' className='mx-2'><FontAwesomeIcon icon={faEnvelope} /></a>
-          <a href='linkedin.com/in/michaelzhan1' className='mx-2'><FontAwesomeIcon icon={faLinkedin} /></a>
-          <a href='github.com/michaelzhan2' className='mx-2'><FontAwesomeIcon icon={faGithub} /></a>
+          <a href='https://linkedin.com/in/michaelzhan1' className='mx-2'><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a href='https://github.com/michaelzhan1' className='mx-2'><FontAwesomeIcon icon={faGithub} /></a>
         </div>
-        <p className='text-sm mb-1'>© 2023 Michael Zhan. Built with Next.js, deployed on Railway</p>
+        <p className='text-sm mb-1'>© 2024 Michael Zhan. Built with Next.js, deployed on Railway</p>
       </div>
 
 
