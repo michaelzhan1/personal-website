@@ -15,9 +15,9 @@ export default function CustomNavbar () {
         <svg
           className="w-8 h-8 text-gray-500 ms-3 mb-3"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           viewBox="0 0 23 23"
           stroke="currentColor"
           onClick={toggleNavbar}

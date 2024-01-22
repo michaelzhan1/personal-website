@@ -14,7 +14,7 @@ export default function ProjectExamples () {
 
   return (
     <>
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap mb-3'>
         { projectData.map((project, index) => {
           return (
             <>
@@ -26,10 +26,10 @@ export default function ProjectExamples () {
                 </div>
                 <div>
                   <a href={project.url} target='_blank' rel='noreferrer' className='mb-3'>
-                    <h2 className='text-[1.5rem] font-bold'>{project.name}</h2>
+                    <h2 className='font-bold'>{project.name}</h2>
                   </a>
                 </div>
-                <div className='mb-3'>
+                <div>
                   <p>{project.description}</p>
                 </div>
               </div>
