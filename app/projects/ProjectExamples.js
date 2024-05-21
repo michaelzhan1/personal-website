@@ -19,7 +19,7 @@ export default function ProjectExamples () {
           return (
             <>
               <div className='flex flex-col w-full md:w-1/2 p-2'>
-                <div className='mb-3'>
+                <div className='mb-3 hover:scale-105'>
                   <a href={project.url} target='_blank' rel='noreferrer'>
                     <img src={project.imageUrl} alt={project.name} className='w-full' />
                   </a>
