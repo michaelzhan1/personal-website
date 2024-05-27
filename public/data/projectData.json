@@ -24,10 +24,10 @@
         "description": "A bookshelf and recommender service with user authentication, using Google Books API. Built with Next.js, NextAuth, and Tailwind CSS."
     },
     {
-        "name": "Tic-Tac-Toe",
-        "url": "https://tictactoe.michaelzhan.me/",
-        "imageUrl": "/img/tictactoe.png",
-        "description": "A simple multiplayer tic-tac-toe game. Built with Next.js and TailwindCSS, using Socket.IO and an Express.js backend for real-time communication."
+        "name": "PokerChips",
+        "url": "https://pokerchips.michaelzhan.me/",
+        "imageUrl": "/img/pokerchip.png",
+        "description": "An online poker chip tracking system, allowing users to bet and take from a pot. Built with Next.js and TailwindCSS using websockets."
     },
     {
         "name": "FairShare",
