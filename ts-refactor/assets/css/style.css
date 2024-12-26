@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpenSans', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main {
+    width: 58%;
+}
+
+/* Move away from the tailwind/bootstrap style and do specialized component CSS, only using general classes when necessary  */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.in-flex-center-all {
+    justify-content: center;
+    align-items: center;
+}
+
+.in-flex-center-justify {
+    justify-content: center;
+}
+
+.in-flex-center-align {
+    align-items: center;
+}
