@@ -16,7 +16,9 @@ export default function Home() {
       </div>
     
       <div>
-        <p>Hi there! My name is Michael, and I'm currently pursuing a master's degree at Harvard in the CSE program. I did my undergrad at UT Austin in Chemical Engineering with a certificate in Computer Science. I'm interested in software engineering, web development, and data science. In my free time, I enjoy learning new things, rock climbing, and listening to music.</p>
+        <p>
+          Hi there! My name is Michael, and I'm currently working as a SWE at Bloomberg. I graduated from UT Austin with a B.S. in Chemical Engineering and from Harvard with an M.S. in Computational Science and Engineering. In my free time, I enjoy browsing Amazon for things I shouldn't buy, rock climbing, and eating food.
+        </p>
       </div>
     </>
   )

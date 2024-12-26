@@ -1,7 +1,7 @@
 import './globals.css'
 import { Open_Sans } from 'next/font/google'
-import CustomNavbar from 'components/CustomNavbar'
-import CustomFooter from 'components/CustomFooter'
+import CustomNavbar from '@/components/CustomNavbar'
+import CustomFooter from '@/components/CustomFooter'
 
 export const metadata = {
   title: 'Michael Zhan',
