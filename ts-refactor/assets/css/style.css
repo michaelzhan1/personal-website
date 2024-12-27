@@ -25,27 +25,6 @@ html * {
     width: 58%;
 }
 
-/* Move away from the tailwind/bootstrap style and do specialized component CSS, only using general classes when necessary  */
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.in-flex-center-all {
-    justify-content: center;
-    align-items: center;
-}
-
-.in-flex-center-justify {
-    justify-content: center;
-}
-
-.in-flex-center-align {
-    align-items: center;
+.circle-img {
+    border-radius: 50%;
 }
