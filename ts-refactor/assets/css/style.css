@@ -14,12 +14,12 @@ html * {
 body {
     background-color: #f5f5f5;
     font-family: 'OpenSans', sans-serif;
-    font-size: 1.125rem;
 }
 
 #page {
     height: calc(100vh - 80px);
     overflow-y: scroll;
+    font-size: 1.125rem;
 }
 
 #main {
@@ -39,18 +39,34 @@ body {
     bottom: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 80px;
     width: 100%;
-    align-items: center;
     background-color: #363636;
     color: #efede7;
+}
+
+#contact-title {
+    font-size: 1rem;
+    margin-top: 0.25rem;
 }
 
 #footer-links {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.25rem;
 }
 
 #footer-links > a {
     color: #efede7;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#copyright {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
 }
