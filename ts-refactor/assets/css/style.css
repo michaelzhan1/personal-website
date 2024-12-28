@@ -43,9 +43,9 @@ body {
 }
 
 #main {
-    height: 100%;
     width: 650px;
     margin: auto;
+    padding-bottom: 0.75rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
