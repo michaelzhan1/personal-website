@@ -7,4 +7,5 @@ function loadTemplate(url, elementId) {
         .catch(error => console.error('Error loading template', error));
 }
 
+loadTemplate('../components/header.html', 'header-container');
 loadTemplate('../components/footer.html', 'footer-container');
