@@ -2,43 +2,43 @@
     {
         "name": "michaelzhan.me",
         "url": "https://michaelzhan.me/",
-        "imageUrl": "/img/website.png",
+        "imageUrl": "../assets/img/website.png",
         "description": "My personal website (the one you're on right now!). Built with Next.js and TailwindCSS."
     },
     {
         "name": "Conway's Game of Life",
         "url": "https://github.com/michaelzhan1/game-of-life",
-        "imageUrl": "/img/gameoflife.png",
+        "imageUrl": "../assets/img/gameoflife.png",
         "description": "An implementation of Conway's Game of Life in C++. Uses gtkmm-3.0 for graphics."
     },
     {
         "name": "bioRxiv Newsletter",
         "url": "https://biorxiv.michaelzhan.me/",
-        "imageUrl": "/img/biorxiv.png",
+        "imageUrl": "../assets/img/biorxiv.png",
         "description": "A weekly newsletter service that retrieves and sends users latest bioRxiv preprints based on their search. Built with Next.js and TailwindCSS, using the bioRxiv API."
     },
     {
         "name": "Book Recommender",
         "url": "https://bookshelf.michaelzhan.me/",
-        "imageUrl": "/img/bookshelf.png",
+        "imageUrl": "../assets/img/bookshelf.png",
         "description": "A bookshelf and recommender service with user authentication, using Google Books API. Built with Next.js, NextAuth, and Tailwind CSS."
     },
     {
         "name": "PokerChips",
         "url": "https://pokerchips.michaelzhan.me/",
-        "imageUrl": "/img/pokerchip.png",
+        "imageUrl": "../assets/img/pokerchip.png",
         "description": "An online poker chip tracking system, allowing users to bet and take from a pot. Built with Next.js and TailwindCSS using websockets."
     },
     {
         "name": "FairShare",
         "url": "https://fairshare.michaelzhan.me/",
-        "imageUrl": "/img/fairshare.png",
+        "imageUrl": "../assets/img/fairshare.png",
         "description": "A web app that tracks expenses for groups and calculates how to split bills. Built with base JavaScript and HTML/CSS on a Flask backend."
     },
     {
         "name": "Weather App",
         "url": "https://weather.michaelzhan.me",
-        "imageUrl": "/img/weather.png",
+        "imageUrl": "../assets/img/weather.png",
         "description": "A weather app that displays the current weather for a user-chosen location. Built with Next.js and TailwindCSS, using the OpenWeatherMap API."
     }
 ]
