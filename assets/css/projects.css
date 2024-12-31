@@ -21,6 +21,10 @@
     width: 100%;
 }
 
+.project img:hover {
+    transform: scale(1.05);
+}
+
 .project a {
     text-decoration: none;
     color: #000000;
