@@ -1,0 +1,37 @@
+#project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.project-name {
+    margin-top: 0.75rem;
+}
+
+.project-description {
+    line-height: 1.75rem;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.project a:hover {
+    color: #6b7280;
+}

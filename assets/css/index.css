@@ -1,0 +1,45 @@
+#profile-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+#subtitle {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.25;
+}
+
+#profile-links {
+    font-weight: 300;
+    line-height: 1.25;
+    margin-top: 0.75rem;
+}
+
+#profile-links > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#profile-links > a:hover {
+    color: #6b7280;
+}
+
+#profile-img {
+    margin-top: 0.75rem;
+}
+
+#main > p {
+    margin-top: 1rem;
+}
