@@ -35,3 +35,9 @@
 .project a:hover {
     color: #6b7280;
 }
+
+@media (max-width: 650px) {
+    #project-container {
+        grid-template-columns: 1fr;
+    }
+}
