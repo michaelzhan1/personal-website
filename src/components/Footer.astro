@@ -1,19 +1,80 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 ---
 
 <footer>
-  <p id="contact-title">Contact me:</p>
-  <div id="footer-links">
-    <a href="mailto:michaelzhan2001@gmail.com">
-      <Icon name="email" />
-    </a>
-    <a href="https://www.linkedin.com/in/michaelzhan1/">
-      <Icon name="linkedin" />
-    </a>
-    <a href="https://www.github.com/michaelzhan1/">
-      <Icon name="github" />
-    </a>
-  </div>
-  <p id="copyright">© 2025-2026 Michael Zhan</p>
+  <div class="contact-label">Contact me:</div>
+  <nav>
+    <ul>
+      <li>
+        <a href="mailto:michaelzhan2001@gmail.com" aria-label="Email">
+          <Icon name="email" size="1.25rem" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/michaelzhan1/"
+          aria-label="LinkedIn"
+        >
+          <Icon name="linkedin" size="1.25rem" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.github.com/michaelzhan1/" aria-label="GitHub">
+          <Icon name="github" size="1.25rem" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="copyright-label">© 2025-2026 Michael Zhan</div>
 </footer>
+
+<style>
+  footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.125rem;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
+  }
+
+  .contact-label {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+  }
+
+  nav ul a {
+    color: var(--color-footer-text);
+  }
+
+  nav ul a:hover {
+    color: var(--color-footer-text-hover);
+  }
+
+  .copyright-label {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+</style>
