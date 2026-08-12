@@ -2,35 +2,44 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<footer>
-  <div class="contact-label">Contact me:</div>
-  <nav>
-    <ul>
-      <li>
-        <a href="mailto:michaelzhan2001@gmail.com" aria-label="Email">
+<footer class="site-footer">
+  <div class="site-footer__label">Contact me:</div>
+  <nav class="site-footer__nav" aria-label="Social links">
+    <ul class="site-footer__list">
+      <li class="site-footer__item">
+        <a
+          class="site-footer__link"
+          href="mailto:michaelzhan2001@gmail.com"
+          aria-label="Email"
+        >
           <Icon name="email" size="1.25rem" />
         </a>
       </li>
-      <li>
+      <li class="site-footer__item">
         <a
+          class="site-footer__link"
           href="https://www.linkedin.com/in/michaelzhan1/"
           aria-label="LinkedIn"
         >
           <Icon name="linkedin" size="1.25rem" />
         </a>
       </li>
-      <li>
-        <a href="https://www.github.com/michaelzhan1/" aria-label="GitHub">
+      <li class="site-footer__item">
+        <a
+          class="site-footer__link"
+          href="https://www.github.com/michaelzhan1/"
+          aria-label="GitHub"
+        >
           <Icon name="github" size="1.25rem" />
         </a>
       </li>
     </ul>
   </nav>
-  <div class="copyright-label">© 2025-2026 Michael Zhan</div>
+  <div class="site-footer__copyright">© 2025-2026 Michael Zhan</div>
 </footer>
 
 <style>
-  footer {
+  .site-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,31 +49,35 @@ import { Icon } from "astro-icon/components";
     width: 100%;
     background-color: var(--color-footer);
     color: var(--color-footer-text);
-  }
 
-  .contact-label {
-    font-size: 1rem;
-    margin-top: 0.25rem;
-  }
+    .site-footer__label {
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-  }
+    .site-footer__nav {
+      display: flex;
+    }
 
-  nav ul a {
-    color: var(--color-footer-text);
-  }
+    .site-footer__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      list-style: none;
+    }
 
-  nav ul a:hover {
-    color: var(--color-footer-text-hover);
-  }
+    .site-footer__link {
+      color: var(--color-footer-text);
 
-  .copyright-label {
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
+      &:hover {
+        color: var(--color-footer-text-hover);
+      }
+    }
+
+    .site-footer__copyright {
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
   }
 </style>

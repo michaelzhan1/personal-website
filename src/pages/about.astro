@@ -3,45 +3,30 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <h1>About</h1>
-  <p>I'm Michael—software engineer and designer. (Replace with real content.)</p>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
-  <div>Content</div>
+  <section class="about">
+    <h1 class="about__title">About</h1>
+    <p class="about__intro">
+      I'm Michael—software engineer and designer. (Replace with real content.)
+    </p>
+    <div class="about__content">Content</div>
+    <div class="about__content">Content</div>
+    <div class="about__content">Content</div>
+    <div class="about__content">Content</div>
+  </section>
 </BaseLayout>
+
+<style>
+  .about {
+    &__title {
+      margin-bottom: 0.75rem;
+    }
+
+    &__intro {
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      margin-top: 0.5rem;
+    }
+  }
+</style>

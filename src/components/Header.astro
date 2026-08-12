@@ -1,16 +1,29 @@
-<header>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+<header class="site-header">
+  <nav class="site-header__nav" aria-label="Main navigation">
+    <ul class="site-header__list">
+      <li class="site-header__item">
+        <a class="site-header__link" href="/">Home</a>
+      </li>
+      <li class="site-header__item">
+        <a class="site-header__link" href="/about">About</a>
+      </li>
+      <li class="site-header__item">
+        <a class="site-header__link" href="/projects">Projects</a>
+      </li>
+      <li class="site-header__item">
+        <a
+          class="site-header__link"
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer">Resume</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
 
 <style>
-  header {
+  .site-header {
     display: flex;
     position: sticky;
     top: 0;
@@ -20,22 +33,26 @@
     width: var(--max-page-width);
     background-color: var(--color-background);
     justify-content: flex-end;
-  }
 
-  nav ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    list-style: none;
-    font-size: 1.125rem;
-  }
+    .site-header__nav {
+      display: flex;
+    }
 
-  a {
-    color: var(--color-header-link);
-    text-decoration: none;
-  }
+    .site-header__list {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      font-size: 1.125rem;
+    }
 
-  a:hover {
-    color: var(--color-header-link-hover);
+    .site-header__link {
+      color: var(--color-header-link);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-header-link-hover);
+      }
+    }
   }
 </style>
