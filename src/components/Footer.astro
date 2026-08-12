@@ -31,17 +31,13 @@ import { Icon } from "astro-icon/components";
 
 <style>
   footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: var(--footer-height);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
     gap: 0.125rem;
+    min-height: var(--footer-height);
+    width: 100%;
     background-color: var(--color-footer);
     color: var(--color-footer-text);
   }
@@ -49,12 +45,6 @@ import { Icon } from "astro-icon/components";
   .contact-label {
     font-size: 1rem;
     margin-top: 0.25rem;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   nav ul {
