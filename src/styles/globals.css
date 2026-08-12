@@ -14,6 +14,8 @@
   --color-footer: #363636;
   --color-footer-text: #efede7;
   --color-footer-text-hover: #bfbebb;
+  --color-text: #000000;
+  --color-text-hover: #6b7280;
 
   /* sizing */
   --max-page-width: 650px;
