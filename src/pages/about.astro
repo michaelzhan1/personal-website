@@ -2,31 +2,30 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
+<BaseLayout title="About Me" description="Some information about Michael Zhan">
   <section class="about">
     <h1 class="about__title">About</h1>
-    <p class="about__intro">
-      I'm Michael—software engineer and designer. (Replace with real content.)
-    </p>
-    <div class="about__content">Content</div>
-    <div class="about__content">Content</div>
-    <div class="about__content">Content</div>
-    <div class="about__content">Content</div>
+    <div class="about__content">
+      <p>Hi! I'm currently working as a software engineer at Bloomberg in NYC, with a focus and passion for backend development. In my free time, I go rock climbing (to justify the cost of my climbing gym membership, such circular logic), play badminton (a recent hobby, leeching off my friend's company membership), and work on side projects. I've also sunk a good amount of time into games like CS2, Valorant, and League.</p>
+      <p>Way back before I gained a conscience, I thought I'd become a doctor, research, or at least do something biology-adjacent, since that's what I'd grown up around. I enjoyed chemistry and physics, so I ended up studying chemical engineering in college intending to go into biotech, but I eventually realized that (a) I wasn't interested that in research and (b) I didn't enjoy biotech that much in the first place.</p>
+      <p>Meanwhile, I had been learning programming through things like Leetcode and Project Euler (who doesn't love gamifying everything?) and CS courses at school, but more as a hobby than anything. That large realization led me to take CS more seriously, so I went and got an M.S. in Computational Science and Engineering, where I essentially crash-coursed the content of a CS bachelor's, did an internship at Amazon, then started working for Bloomberg after graduating.</p>
+      <p>My passions and interests lie in the backend, where I enjoy tinkering with complex systems and algorithmic problem solving (shoutout to Leetcode). More broadly, I like the problem-solving aspect of computer science and find that there's always something new to learn, whether it's a new language, framework, or fundamental concept.</p>
+    </div>
   </section>
 </BaseLayout>
 
 <style>
   .about {
-    &__title {
+    .about__title {
       margin-bottom: 0.75rem;
     }
 
-    &__intro {
-      margin-bottom: 1rem;
-    }
-
-    &__content {
-      margin-top: 0.5rem;
+    .about__content {
+      p {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin-top: 0.75rem;
+      }
     }
   }
 </style>
