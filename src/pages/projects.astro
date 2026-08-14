@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
+
+import WebsiteProject from "../components/projects/Website.astro";
+import GameOfLifeProject from "../components/projects/GameOfLife.astro";
+---
+
+<BaseLayout title="Projects" description="Michael Zhan's projects">
+  <section class="projects">
+    <PageTitle title="Projects" />
+    <div class="projects__content">
+      <WebsiteProject />
+      <GameOfLifeProject />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+</style>
