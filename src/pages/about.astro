@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 ---
 
 <BaseLayout title="About Me" description="Some information about Michael Zhan">
   <section class="about">
-    <h1 class="about__title">About</h1>
+    <PageTitle title="About" />
     <div class="about__content">
       <p>Hi! I'm currently working as a software engineer at Bloomberg in NYC, with a focus and passion for backend development. In my free time, I go rock climbing (to justify the cost of my climbing gym membership, such circular logic), play badminton (a recent hobby, leeching off my friend's company membership), and work on side projects. I've also sunk a good amount of time into games like CS2, Valorant, and League.</p>
       <p>Way back before I gained a conscience, I thought I'd become a doctor, researcher, or at least do something biology-adjacent, since that's what I'd grown up around. I enjoyed chemistry and physics, so I ended up studying chemical engineering in college intending to go into biotech, but I eventually realized that I really wasn't interested in the field in the first place.</p>
@@ -16,10 +17,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <style>
   .about {
-    .about__title {
-      margin-bottom: 0.75rem;
-    }
-
     .about__content {
       p {
         font-size: 1.125rem;
