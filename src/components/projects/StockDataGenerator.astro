@@ -1,0 +1,22 @@
+---
+import ProjectTemplate from "..//ProjectTemplate.astro";
+---
+
+<ProjectTemplate
+  title="Stock Data Generator"
+  link="https://github.com/michaelzhan1/stock-data-generator"
+>
+  <p>
+    This was inspired by an interview question from a friend's team: given a
+    stream of stock data, design a system to query the max price in a recent
+    time range. I thought it would be fun to build a simple version of this out
+    and visualize it. The stock data is simulated with geometric brownian motion
+    in a Go backend and is served to the frontend through SSE. The frontend
+    handles a min and max calculation using the sliding window max approach and
+    displays real-time data with the <a
+      href="https://github.com/ChartGPU/ChartGPU"
+      target="_blank"
+      rel="noopener noreferrer">ChartGPU</a
+    > library.
+  </p>
+</ProjectTemplate>
