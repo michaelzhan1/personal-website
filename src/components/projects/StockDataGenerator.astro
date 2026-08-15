@@ -1,5 +1,5 @@
 ---
-import ProjectTemplate from "..//ProjectTemplate.astro";
+import ProjectTemplate from "../ProjectTemplate.astro";
 ---
 
 <ProjectTemplate
@@ -9,14 +9,14 @@ import ProjectTemplate from "..//ProjectTemplate.astro";
   <p>
     This was inspired by an interview question from a friend's team: given a
     stream of stock data, design a system to query the max price in a recent
-    time range. I thought it would be fun to build a simple version of this out
-    and visualize it. The stock data is simulated with geometric brownian motion
-    in a Go backend and is served to the frontend through SSE. The frontend
-    handles a min and max calculation using the sliding window max approach and
-    displays real-time data with the <a
+    time range. I thought it would be fun to build a simple version of this and
+    visualize it. The Go backend simulates stock data with geometric brownian
+    motion and serves it to the frontend through SSE. The frontend uses a
+    sliding-window max algorithm to track the min and max prices in real time,
+    with <a
       href="https://github.com/ChartGPU/ChartGPU"
       target="_blank"
       rel="noopener noreferrer">ChartGPU</a
-    > library.
+    > for visualization.
   </p>
 </ProjectTemplate>
