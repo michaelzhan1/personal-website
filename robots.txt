@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.mzhan.dev/sitemap.xml
+Sitemap: https://www.mzhan.dev/sitemap-index.xml

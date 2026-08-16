@@ -1,0 +1,58 @@
+<header class="site-header">
+  <nav class="site-header__nav" aria-label="Main navigation">
+    <ul class="site-header__list">
+      <li class="site-header__item">
+        <a class="site-header__link" href="/">Home</a>
+      </li>
+      <li class="site-header__item">
+        <a class="site-header__link" href="/about">About</a>
+      </li>
+      <li class="site-header__item">
+        <a class="site-header__link" href="/projects">Projects</a>
+      </li>
+      <li class="site-header__item">
+        <a
+          class="site-header__link"
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer">Resume</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: var(--max-page-width);
+    background-color: var(--color-background);
+    justify-content: flex-end;
+
+    .site-header__nav {
+      display: flex;
+    }
+
+    .site-header__list {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      font-size: 1.125rem;
+    }
+
+    .site-header__link {
+      color: var(--color-header-link);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-header-link-hover);
+      }
+    }
+  }
+</style>

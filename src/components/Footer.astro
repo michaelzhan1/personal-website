@@ -1,0 +1,83 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="site-footer">
+  <div class="site-footer__label">Contact me:</div>
+  <nav class="site-footer__nav" aria-label="Social links">
+    <ul class="site-footer__list">
+      <li class="site-footer__item">
+        <a
+          class="site-footer__link"
+          href="mailto:michaelzhan2001@gmail.com"
+          aria-label="Email"
+        >
+          <Icon name="email" size="1.25rem" />
+        </a>
+      </li>
+      <li class="site-footer__item">
+        <a
+          class="site-footer__link"
+          href="https://www.linkedin.com/in/michaelzhan1/"
+          aria-label="LinkedIn"
+        >
+          <Icon name="linkedin" size="1.25rem" />
+        </a>
+      </li>
+      <li class="site-footer__item">
+        <a
+          class="site-footer__link"
+          href="https://www.github.com/michaelzhan1/"
+          aria-label="GitHub"
+        >
+          <Icon name="github" size="1.25rem" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="site-footer__copyright">© 2025-2026 Michael Zhan</div>
+</footer>
+
+<style>
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.125rem;
+    min-height: var(--footer-height);
+    width: 100%;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
+
+    .site-footer__label {
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .site-footer__nav {
+      display: flex;
+    }
+
+    .site-footer__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .site-footer__link {
+      color: var(--color-footer-text);
+
+      &:hover {
+        color: var(--color-footer-text-hover);
+      }
+    }
+
+    .site-footer__copyright {
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+</style>

@@ -1,0 +1,127 @@
+---
+import { Image } from "astro:assets";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import headshot from "../assets/images/headshot.jpg";
+---
+
+<BaseLayout title="Michael Zhan" description="Michael Zhan's personal website">
+  <div class="home">
+    <div class="home__hero">
+      <div class="home__copy">
+        <h1 class="home__title">Michael Zhan</h1>
+        <h2 class="home__subtitle">SWE @ Bloomberg</h2>
+        <h3 class="home__links">
+          <a
+            class="home__link"
+            href="https://www.linkedin.com/in/michaelzhan1/"
+            target="_blank"
+            rel="noopener noreferrer">[LinkedIn]</a
+          >
+          <a
+            class="home__link"
+            href="https://www.github.com/michaelzhan1/"
+            target="_blank"
+            rel="noopener noreferrer">[GitHub]</a
+          >
+        </h3>
+      </div>
+      <div class="home__image">
+        <Image src={headshot} alt="Michael Zhan" width="244" height="244" />
+      </div>
+    </div>
+    <div class="home__intro">
+      <p>
+        Hi there, I'm Michael! I currently work as a software engineer at
+        Bloomberg, where I develop full stack systems for a web content management
+        platform. Welcome to my little corner of the internet where you can learn
+        more about me, read some of my ramblings, and see some of my projects.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .home__hero {
+      display: flex;
+      justify-content: space-between;
+
+      .home__copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .home__title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          line-height: 2.5rem;
+        }
+
+        .home__subtitle {
+          font-size: 1.75rem;
+          font-weight: 300;
+          line-height: 1.25;
+        }
+
+        .home__links {
+          font-weight: 300;
+          line-height: 1.25;
+          margin-top: 0.75rem;
+
+          .home__link {
+            color: var(--color-text);
+            text-decoration: none;
+
+            &:hover {
+              color: var(--color-text-hover);
+            }
+          }
+        }
+      }
+
+      .home__image {
+        margin-top: 0.75rem;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      @media (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .home__copy {
+          .home__subtitle {
+            margin-top: 0.25rem;
+          }
+
+          .home__links {
+            margin-top: 0.25rem;
+          }
+        }
+      }
+    }
+
+    .home__intro {
+      p {
+        font-size: 1.125rem;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .home__intro {
+        p {
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
+</style>

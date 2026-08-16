@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
+
+import WebsiteProject from "../components/projects/Website.astro";
+import StockDataGeneratorProject from "../components/projects/StockDataGenerator.astro";
+import MockLogSystemProject from "../components/projects/MockLogSystem.astro";
+import MonkeyInterpreterProject from "../components/projects/MonkeyInterpreter.astro";
+import PickleballReserveProject from "../components/projects/PickleballReserve.astro";
+import GameOfLifeProject from "../components/projects/GameOfLife.astro";
+---
+
+<BaseLayout title="Projects" description="Michael Zhan's projects">
+  <section class="projects">
+    <PageTitle title="Projects" />
+    <div class="projects__content">
+      <WebsiteProject />
+      <StockDataGeneratorProject />
+      <MockLogSystemProject />
+      <MonkeyInterpreterProject />
+      <PickleballReserveProject />
+      <GameOfLifeProject />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+</style>
