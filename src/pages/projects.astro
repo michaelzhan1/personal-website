@@ -11,21 +11,25 @@ import SortVisualizerProject from "../components/projects/SortVisualizer.astro";
 import SplitProject from "../components/projects/Split.astro";
 import StockDataGeneratorProject from "../components/projects/StockDataGenerator.astro";
 import WebsiteProject from "../components/projects/Website.astro";
+
+const projects = [
+  WebsiteProject,
+  StockDataGeneratorProject,
+  MockLogSystemProject,
+  MonkeyInterpreterProject,
+  PickleballReserveProject,
+  SplitProject,
+  MazeProject,
+  GameOfLifeProject,
+  SortVisualizerProject,
+];
 ---
 
 <BaseLayout title="Projects" description="Michael Zhan's projects">
   <section class="projects">
     <PageTitle title="Projects" />
     <div class="projects__content">
-      <WebsiteProject />
-      <StockDataGeneratorProject />
-      <MockLogSystemProject />
-      <MonkeyInterpreterProject />
-      <PickleballReserveProject />
-      <SplitProject />
-      <MazeProject />
-      <GameOfLifeProject />
-      <SortVisualizerProject />
+      {projects.map((Project) => <Project />)}
     </div>
   </section>
 </BaseLayout>
