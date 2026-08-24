@@ -1,4 +1,5 @@
 ---
+import Link from "../Link.astro";
 import ProjectTemplate from "../ProjectTemplate.astro";
 ---
 
@@ -7,10 +8,10 @@ import ProjectTemplate from "../ProjectTemplate.astro";
   link="https://github.com/michaelzhan1/go-interpreter"
 >
   <p>
-    I wrote this project following Thorsten Ball's book <a
+    I wrote this project following Thorsten Ball's book <Link
       href="https://interpreterbook.com/"
-      rel="noreferrer noopener">Writing An Interpreter In Go</a
-    >. It's a simple interpreter for a simple language called Monkey, but dives
+      text="Writing An Interpreter In Go"
+    />. It's a simple interpreter for a simple language called Monkey, but dives
     into all of the components of an interpreter, including lexing, parsing, and
     evaluation.
   </p>

@@ -1,4 +1,5 @@
 ---
+import Link from "../Link.astro";
 import ProjectTemplate from "../ProjectTemplate.astro";
 ---
 
@@ -8,13 +9,12 @@ import ProjectTemplate from "../ProjectTemplate.astro";
 >
   <p>
     A manager for automated pickleball reservations. Cron jobs run automatically
-    to attempt court reservations through <a
+    to attempt court reservations through <Link
       href="https://playwright.dev/"
-      rel="noreferrer noopener">Playwright</a
-    >, and are managed through simple CRUD operations. This is something I built
-    to help my family out, who have been addicted to pickleball. It was
-    originally built with <a href="https://pptr.dev/" rel="noreferrer noopener"
-      >Puppeteer</a
-    >, but I found more success with Playwright after using it at work.
+      text="Playwright"
+    />, and are managed through simple CRUD operations. This is something I
+    built to help my family out, who have been addicted to pickleball. It was
+    originally built with <Link href="https://pptr.dev/" text="Puppeteer" />,
+    but I found more success with Playwright after using it at work.
   </p>
 </ProjectTemplate>

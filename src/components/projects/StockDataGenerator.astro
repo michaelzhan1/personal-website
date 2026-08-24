@@ -1,4 +1,5 @@
 ---
+import Link from "../Link.astro";
 import ProjectTemplate from "../ProjectTemplate.astro";
 ---
 
@@ -13,10 +14,7 @@ import ProjectTemplate from "../ProjectTemplate.astro";
     visualize it. The Go backend simulates stock data with geometric brownian
     motion and serves it to the frontend through SSE. The frontend uses a
     sliding-window max algorithm to track the min and max prices in real time,
-    with <a
-      href="https://github.com/ChartGPU/ChartGPU"
-      target="_blank"
-      rel="noopener noreferrer">ChartGPU</a
-    > for visualization.
+    with <Link href="https://github.com/ChartGPU/ChartGPU" text="ChartGPU" /> for
+    visualization.
   </p>
 </ProjectTemplate>

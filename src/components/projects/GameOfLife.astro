@@ -1,5 +1,6 @@
 ---
 import ProjectTemplate from "../../components/ProjectTemplate.astro";
+import Link from "../Link.astro";
 ---
 
 <ProjectTemplate
@@ -7,12 +8,10 @@ import ProjectTemplate from "../../components/ProjectTemplate.astro";
   link="https://github.com/michaelzhan1/game-of-life"
 >
   <p>
-    A C++ implementation of Conway's Game of Life using the <a
+    A C++ implementation of Conway's Game of Life using the <Link
       href="https://gtkmm.gnome.org/en/index.html"
-      target="_blank"
-      rel="noopener noreferrer">gtkmm</a
-    > API. This was a very brief foray into C++ for me, but I was also
-    trying to figure out how much I cared about UI design and visuals in these side
-    projects.
+      text="gtkmm"
+    /> API. This was a very brief foray into C++ for me, but I was also trying to
+    figure out how much I cared about UI design and visuals in these side projects.
   </p>
 </ProjectTemplate>

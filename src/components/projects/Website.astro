@@ -1,19 +1,16 @@
 ---
 import ProjectTemplate from "../../components/ProjectTemplate.astro";
+import Link from "../Link.astro";
 ---
 
 <ProjectTemplate title="mzhan.dev" link="https://mzhan.dev/">
   <p>
     The website you're currently on! I recently revamped this using a new
-    framework I found called <a
-      href="https://astro.build/"
-      target="_blank"
-      rel="noopener noreferrer">Astro</a
-    >, which takes an HTML-first approach to building websites, and only
-    incorporates JS when necessary. View source code on <a
+    framework I found called <Link href="https://astro.build/" text="Astro" />,
+    which takes an HTML-first approach to building websites, and only
+    incorporates JS when necessary. View source code on <Link
       href="https://github.com/michaelzhan1/website"
-      target="_blank"
-      rel="noopener noreferrer">GitHub</a
-    >.
+      text="GitHub"
+    />.
   </p>
 </ProjectTemplate>
