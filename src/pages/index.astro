@@ -27,7 +27,7 @@ import headshot from "../assets/images/headshot.jpg";
         </h3>
       </div>
       <div class="home__image">
-        <Image src={headshot} alt="Michael Zhan" width="244" height="244" />
+        <Image src={headshot} alt="Michael Zhan" class="home__image-photo" />
       </div>
     </div>
     <div class="home__intro">
@@ -87,7 +87,10 @@ import headshot from "../assets/images/headshot.jpg";
       .home__image {
         margin-top: 0.75rem;
 
-        img {
+        .home__image-photo {
+          width: 244px;
+          height: 244px;
+          object-fit: cover;
           border-radius: 50%;
         }
       }
