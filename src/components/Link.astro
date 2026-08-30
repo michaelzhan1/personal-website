@@ -1,12 +1,16 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 interface Props {
   href: string;
-  text: string;
+  content: string | typeof Icon;
+  className?: string;
+  ariaLabel?: string;
 }
 
-const { href, text } = Astro.props;
+const { href, content, className, ariaLabel } = Astro.props;
 ---
 
-<a href={href} target="_blank" rel="noopener noreferrer">
-  {text}
+<a href={href} target="_blank" rel="noopener noreferrer" class={className} aria-label={ariaLabel}>
+  {content}
 </a>

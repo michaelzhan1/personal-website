@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import headshot from "../assets/images/headshot.jpg";
+import Link from "../components/Link.astro";
 ---
 
 <BaseLayout title="Michael Zhan" description="Michael Zhan's personal website">
@@ -12,18 +13,16 @@ import headshot from "../assets/images/headshot.jpg";
         <h1 class="home__title">Michael Zhan</h1>
         <h2 class="home__subtitle">SWE @ Bloomberg</h2>
         <h3 class="home__links">
-          <a
-            class="home__link"
+          <Link
+            className="home__link"
             href="https://www.linkedin.com/in/michaelzhan1/"
-            target="_blank"
-            rel="noopener noreferrer">[LinkedIn]</a
-          >
-          <a
-            class="home__link"
+            content="[LinkedIn]"
+          />
+          <Link
+            className="home__link"
             href="https://www.github.com/michaelzhan1/"
-            target="_blank"
-            rel="noopener noreferrer">[GitHub]</a
-          >
+            content="[GitHub]"
+          />
         </h3>
       </div>
       <div class="home__image">
@@ -33,9 +32,10 @@ import headshot from "../assets/images/headshot.jpg";
     <div class="home__intro">
       <p>
         Hi there, I'm Michael! I currently work as a software engineer at
-        Bloomberg, where I develop full stack systems for a web content management
-        platform. Welcome to my little corner of the internet where you can learn
-        more about me, read some of my ramblings, and see some of my projects.
+        Bloomberg, where I develop full stack systems for a web content
+        management platform. Welcome to my little corner of the internet where
+        you can learn more about me, read some of my ramblings, and see some of
+        my projects.
       </p>
     </div>
   </div>
