@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
+---
+
+<BaseLayout title="About Me" description="Some information about Michael Zhan">
+  <section class="blog">
+    <PageTitle title="Posts" />
+    <div class="blog__content">
+      {posts.map((post) => (
+        <div class="blog__post">
+          <h2 class="blog__post-title">{post.data.title}</h2>
+          <p class="blog__post-date">{post.data.date}</p>
+          <p class="blog__post-description">{post.data.description}</p>
+          <a class="blog__post-link" href={`/blog/${post.id}`}>Read more</a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
