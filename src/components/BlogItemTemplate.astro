@@ -1,5 +1,6 @@
 ---
 import { formatDate } from "../utils/common";
+import Link from "../components/Link.astro";
 
 interface Props {
   title: string;
@@ -13,7 +14,7 @@ const { title, link, date, description } = Astro.props;
 
 <article class="blog-item">
   <h2 class="blog-item__title">
-    <a href={link}>{title}</a>
+    <Link href={link} content={title} newTab={false} />
   </h2>
   <p class="blog-item__date">{formatDate(date)}</p>
   <div class="blog-item__description">

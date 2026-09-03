@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";
+import Link from "../../components/Link.astro";
 import { formatDate } from "../../utils/common";
 
 export async function getStaticPaths() {
@@ -17,7 +18,7 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <a href="/blog" class="blog__back-link">← All posts</a>
+  <Link href="/blog" className="blog__back-link" content="← All posts" newTab={false} />
 
   <section class="blog">
     <PageTitle title={post.data.title} />
