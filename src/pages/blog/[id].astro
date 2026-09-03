@@ -1,5 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import { formatDate } from "../../utils/common";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -13,5 +16,44 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<h1>{post.data.title}</h1>
-<Content />
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <a href="/blog" class="blog__back-link">← All posts</a>
+
+  <section class="blog">
+    <PageTitle title={post.data.title} />
+    <div class="blog__date">
+      <p>{formatDate(post.data.date)}</p>
+    </div>
+    <div class="blog__content">
+      <Content />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .blog__back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+
+    &:hover {
+      color: var(--color-text-hover);
+    }
+  }
+
+  .blog {
+    .blog__date {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .blog__content {
+      margin-top: 1rem;
+
+      p:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+</style>
