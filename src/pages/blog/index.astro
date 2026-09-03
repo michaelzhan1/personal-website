@@ -5,6 +5,7 @@ import BlogItemTemplate from "../../components/BlogItemTemplate.astro";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
+posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <BaseLayout title="Blog" description="Michael Zhan's blog posts">
