@@ -18,7 +18,12 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <Link href="/blog" className="blog__back-link" content="← All posts" newTab={false} />
+  <Link
+    href="/blog"
+    className="blog__back-link"
+    content="← All posts"
+    newTab={false}
+  />
 
   <section class="blog">
     <PageTitle title={post.data.title} />
@@ -50,10 +55,88 @@ const { Content } = await render(post);
     }
 
     .blog__content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       margin-top: 1rem;
 
-      p:not(:last-child) {
-        margin-bottom: 1rem;
+      pre {
+        background: #f1f1f1;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        overflow-x: auto;
+
+        code {
+          counter-reset: line;
+        }
+
+        code .line {
+          display: inline-block;
+          width: 100%;
+        }
+
+        code .line::before {
+          counter-increment: line;
+          content: counter(line);
+
+          display: inline-block;
+          width: 1rem;
+          margin-right: 1rem;
+
+          text-align: right;
+          color: #999;
+          user-select: none;
+        }
+      }
+
+      p:has(img) {
+        align-self: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 0.95rem;
+
+        th,
+        td {
+          padding: 0.7rem 1rem;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+
+        th {
+          background: #e2e2e2;
+          font-weight: 600;
+        }
+
+        td {
+          background: #efefef;
+        }
+
+        /* Top corners */
+        thead th:first-child {
+          border-top-left-radius: 8px;
+        }
+
+        thead th:last-child {
+          border-top-right-radius: 8px;
+        }
+
+        /* Bottom corners */
+        tbody tr:last-child td:first-child {
+          border-bottom-left-radius: 8px;
+        }
+
+        tbody tr:last-child td:last-child {
+          border-bottom-right-radius: 8px;
+        }
+
+        tbody tr:last-child td {
+          border-bottom: none;
+        }
       }
     }
   }

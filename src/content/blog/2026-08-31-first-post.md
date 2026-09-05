@@ -1,15 +1,17 @@
 ---
-title: "First Blog Post"
-description: "This is my first ever blog post."
-date: 2026-08-31
+title: "Project Ideas"
+description: "A few random project ideas"
+date: 2026-09-03
 ---
 
-This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post. 
+Sample post
 
-This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post. 
+```go
+fmt.Println("hello")
+```
 
-This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post. 
+![alt text](image.png)
 
-This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post. 
-
-This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post. This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post.This is the content of my first ever blog post. 
+|sample|table|
+|-|-|
+|asdf|qwer|
