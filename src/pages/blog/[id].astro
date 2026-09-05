@@ -18,12 +18,14 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <Link
-    href="/blog"
-    className="blog__back-link"
-    content="← All posts"
-    newTab={false}
-  />
+  <section class="back">
+    <Link
+      href="/blog"
+      className="blog__back-link"
+      content="← All posts"
+      newTab={false}
+    />
+  </section>
 
   <section class="blog">
     <PageTitle title={post.data.title} />
@@ -37,13 +39,16 @@ const { Content } = await render(post);
 </BaseLayout>
 
 <style>
-  .blog__back-link {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: var(--color-text);
-
-    &:hover {
-      color: var(--color-text-hover);
+  .back {
+    .blog__back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      font-size: 0.875rem;
+  
+      &:hover {
+        color: var(--color-text-hover);
+      }
     }
   }
 
